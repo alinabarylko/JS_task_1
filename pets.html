@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Pets</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<script>
+		'use strict';
+
+		var userName;
+		var userAge;
+		var userCity;
+		var userPet;
+
+		userName = prompt('What is your name?');
+
+		if(userName == '') {
+			userName = 'Stranger'; 
+			alert('Hello, Stranger!!');
+		}
+		else {
+			alert('Hello,' + ' ' + userName + '!!');
+			
+		}
+
+		userAge = prompt('How old are your?');
+
+		if(userAge == '') {
+			userAge = confirm('Are you sure?.. Are you at least 18?');
+			if(userAge == true) {
+				alert('good:))');
+				userAge = 'Young & Beautiful';
+			}
+			else {
+				alert('You are so young:)');
+				userAge = 'So young';
+			}
+		}
+		else {
+			alert('You are' + ' ' + userAge);
+		}
+
+		userCity = prompt('Where are you from?');
+
+		if(userCity == '') {
+			userCity = 'Your City';
+		}
+		else {
+			alert('You are from' + ' ' + userCity);
+		}
+
+		userPet = confirm('Have you got a pet?');
+		if(userPet == true) {
+			userPet = prompt('What is its name?');
+			if(userPet == ''){
+				userPet = 'Pet';
+				alert('Hello,' + ' ' + userName + '!' + ' ' + 'You are' + ' ' + userAge + '!' + ' ' + 'What is the weather in' + ' ' + userCity + ' ' + 'now?' + ' ' + 'How is your' + ' ' + userPet + '?');
+			}
+			else {
+				alert('Hello,' + ' ' + userName + '!' + ' ' + 'You are' + ' ' + userAge + '!' + ' ' + 'What is the weather in' + ' ' + userCity + ' ' + 'now?' + ' ' + 'How is your' + ' ' + userPet + '?');
+				
+			}
+		}
+		else {
+			alert('Hello,' + ' ' + userName + '!' + ' ' + 'You are' + ' ' + userAge + '!' + ' ' + 'What is the weather in' + ' ' + userCity + ' ' + 'now?' + ' ' + 'Are you Happy? Without any Pet... in your life...((');
+		}
+
+
+
+
+	</script>
+
+</body>
+</html>
